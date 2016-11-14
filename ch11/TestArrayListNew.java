@@ -4,8 +4,9 @@ import java.util.*;
 
 public class TestArrayListNew {
   public static void main(String[] args) {
+
     // Create a list to store cities
-    ArrayList<String> cityList = new ArrayList<String>();
+    ArrayList<String> cityList = new ArrayList<>();
 
     // Add some cities in the list
     cityList.add("London");
@@ -38,7 +39,7 @@ public class TestArrayListNew {
     System.out.println();
 
     // Create a list to store two circles
-    ArrayList<Circle> list = new ArrayList<Circle>();
+    ArrayList<Circle> list = new ArrayList<>();
 
     // Add a circle and a cylinder
     list.add(new Circle(2));

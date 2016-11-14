@@ -13,6 +13,6 @@ public class PolymorphismDemo {
   /** Display geometric object properties */
   public static void displayObject(SimpleGeometricObject object) {
     System.out.println("Created on " + object.getDateCreated() +
-      ". Color is " + object.getColor());
+      ". Color is " + object.getColor()+ ". \n" +object.toString());
   }
 }

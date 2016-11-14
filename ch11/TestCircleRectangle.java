@@ -3,7 +3,7 @@ package ch11;
 public class TestCircleRectangle {
   public static void main(String[] args) {
     CircleFromSimpleGeometricObject circle = 
-      new CircleFromSimpleGeometricObject(1);
+      new CircleFromSimpleGeometricObject(2,"blue",true);
     System.out.println("A circle " + circle.toString());
     System.out.println("The color is " + circle.getColor());
     System.out.println("The radius is " + circle.getRadius());

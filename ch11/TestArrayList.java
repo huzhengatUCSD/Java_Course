@@ -6,7 +6,8 @@ public class TestArrayList {
   public static void main(String[] args) {
     // Create a list to store cities
     ArrayList<String> cityList = new ArrayList<String>();
-
+	ArrayList<String> cities = new ArrayList<>(); //Since jdk 1.7 is ok
+      
     // Add some cities in the list
     cityList.add("London");
     // cityList now contains [London]
@@ -40,7 +41,15 @@ public class TestArrayList {
     // Remove a city at index 1
     cityList.remove(1);
     // contains [London, Xian, Paris, Seoul, Tokyo]
-
+    
+    // insert/add Beijing at index 1
+    cityList.add(1,"Beijing");
+    // contains [London, Beijing, Xian, Paris, Seoul, Tokyo]
+    
+    // set Nanjing as the element at index 1
+    cityList.set(1, "Nanjing");
+    //  contains [London, Nanjing, Xian, Paris, Seoul, Tokyo]
+    
     // Display the contents in the list
     System.out.println(cityList.toString());
 
