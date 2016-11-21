@@ -49,4 +49,8 @@ public class SimpleGeometricObject {
     return "created on " + dateCreated + "\ncolor: " + color + 
       " and filled: " + filled;
   }
+  
+  public void display(){
+	  
+  }
 }

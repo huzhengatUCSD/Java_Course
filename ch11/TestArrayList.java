@@ -17,6 +17,8 @@ public class TestArrayList {
     // cityList now contains [London, Denver, Paris]
     cityList.add("Miami");
     // cityList now contains [London, Denver, Paris, Miami]
+    cityList.add("Miami");
+    
     cityList.add("Seoul");
     // contains [London, Denver, Paris, Miami, Seoul]
     cityList.add("Tokyo");
@@ -59,8 +61,8 @@ public class TestArrayList {
     System.out.println();
     
     // Create a list to store two circles
-    java.util.ArrayList<CircleFromSimpleGeometricObject> list 
-      = new java.util.ArrayList<CircleFromSimpleGeometricObject>();
+    ArrayList<CircleFromSimpleGeometricObject> list 
+      = new ArrayList<CircleFromSimpleGeometricObject>();
     
     // Add two circles
     list.add(new CircleFromSimpleGeometricObject(2));
@@ -69,5 +71,7 @@ public class TestArrayList {
     // Display the area of the first circle in the list
     System.out.println("The area of the circle? " +
       list.get(0).getArea());
+    
+    //list.get(0).display();
   }
 }

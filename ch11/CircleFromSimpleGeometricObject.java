@@ -55,6 +55,14 @@ public class CircleFromSimpleGeometricObject
   public String toString(){
 	  return super.toString() + "\nradius is "+ radius+"\nArea is "+getArea();
   }
+  
+  @Override
+  public void display(){
+	  System.out.println("The circle area is " +
+			  this.getArea());
+	  System.out.println("The circle diameter is " +
+			  this.getDiameter());
+  }
 }
 
 

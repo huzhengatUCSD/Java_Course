@@ -4,7 +4,7 @@ public class CastingDemo {
   /** Main method */
   public static void main(String[] args) {
     // Create and initialize two objects
-    Object object1 = new CircleFromSimpleGeometricObject(1);
+	Object object1 = new CircleFromSimpleGeometricObject(1);
     Object object2 = new RectangleFromSimpleGeometricObject(1, 1);
 
     // Display circle and rectangle
@@ -25,5 +25,9 @@ public class CastingDemo {
       System.out.println("The rectangle area is " +
         ((RectangleFromSimpleGeometricObject)object).getArea());
     }
+
+	  
   }
+
+  
 }

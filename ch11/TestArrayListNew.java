@@ -3,50 +3,19 @@ package ch11;
 import java.util.*;
 
 public class TestArrayListNew {
-  public static void main(String[] args) {
+	public static void main(String[] args) {
+		String[] array = {"red", "green", "blue"};
+		System.out.println(array[0]+" "+array[1]+" "+array[2]);
+		ArrayList<String> list = new ArrayList<>(Arrays.asList(array));
+		System.out.println(list);
+		String[] array1 = new String[list.size()];
+		list.toArray(array1);
+		System.out.println(array1[0]+" "+array1[1]+" "+array1[2]);
+		Integer[] array2 = {3, 5, 95, 4, 15, 34, 3, 6, 5};
+		ArrayList<Integer> list1 = new   
+				ArrayList<>(Arrays.asList(array2));
+		java.util.Collections.shuffle(list1);
+		System.out.println(list1);
 
-    // Create a list to store cities
-    ArrayList<String> cityList = new ArrayList<>();
-
-    // Add some cities in the list
-    cityList.add("London");
-    cityList.add("New York");
-    cityList.add("Paris");
-    cityList.add("Toronto");
-    cityList.add("Hong Kong");
-    cityList.add("Singapore");
-
-    System.out.println("List size? " + cityList.size());
-    System.out.println("Is Toronto in the list? " +
-      cityList.contains("Toronto"));
-    System.out.println("The location of New York in the list? "
-      + cityList.indexOf("New York"));
-    System.out.println("Is the list empty? " +
-      cityList.isEmpty()); // Print false
-
-    // Insert a new city at index 2
-    cityList.add(2, "Beijing");
-
-    // Remove a city from the list
-    cityList.remove("Toronto");
-
-    // Remove a city at index 1
-    cityList.remove(1);
-
-    // Display London Beijing Paris Hong Kong Singapore
-    for (int i = 0; i < cityList.size(); i++)
-      System.out.print(cityList.get(i) + " ");
-    System.out.println();
-
-    // Create a list to store two circles
-    ArrayList<Circle> list = new ArrayList<>();
-
-    // Add a circle and a cylinder
-    list.add(new Circle(2));
-    list.add(new Circle(3));
-
-    // Display the area of the first circle in the list
-    System.out.println("The area of the circle? " +
-      ((Circle)list.get(0)).getArea());
-  }
+	}
 }

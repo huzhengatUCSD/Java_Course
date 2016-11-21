@@ -15,6 +15,7 @@ public class DynamicBindingDemo {
     m(new Student());
     m(new Person());
     m(new Object());
+    m(new AAA());
   }
 
   public static void m(Object x) {
@@ -37,4 +38,9 @@ class Person extends Object {
   public String toString() {
     return "Person";
   }
+  
+ 
+}
+class AAA{
+	 
 }

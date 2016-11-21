@@ -51,4 +51,15 @@ public class RectangleFromSimpleGeometricObject
   public double getPerimeter() {
     return 2 * (width + height);
   }
+  
+  @Override 
+  public void display(){
+	  System.out.println("The rectangle area is " +
+			  this.getArea());
+
+  }
+  @Override 
+  public String toString(){
+    return new String("hello world");
+  }
 }
