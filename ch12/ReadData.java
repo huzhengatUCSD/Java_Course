@@ -18,6 +18,8 @@ public class ReadData {
     		   String mi = input.next();
     		   String lastName = input.next();
     		   int score = input.nextInt();
+   		   //System.out.print(input.nextLine());
+    		   
     		   System.out.println(
     				firstName + " " + mi + " " + lastName + " " + score);
     	}
