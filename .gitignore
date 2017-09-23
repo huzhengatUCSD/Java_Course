@@ -6,6 +6,8 @@
 .idea
 *.iml
 *.ppt
+*.pptx
+*.key
 out
 gen
 
@@ -53,3 +55,4 @@ captures/
 # Keystore files
 *.jks
 
+/.DS_Store
