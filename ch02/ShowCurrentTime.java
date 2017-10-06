@@ -9,8 +9,6 @@ public class ShowCurrentTime {
     // Use Date instance to process the time
     Date date = new Date(totalMilliseconds);
     
-    
-    
     // Obtain the total seconds since midnight, Jan 1, 1970
     long totalSeconds = totalMilliseconds / 1000;
 
