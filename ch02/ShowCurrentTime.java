@@ -37,7 +37,7 @@ public class ShowCurrentTime {
     System.out.println(date);
     System.out.println("The elapsed time since Jan 1, 1970 is " +
     	    date.getTime()+ " millisecondes");
-    System.out.println(date.toString());
+    
     
     // Calendar convension and output
     Calendar c = Calendar.getInstance();
