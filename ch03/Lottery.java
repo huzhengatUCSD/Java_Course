@@ -20,7 +20,7 @@ public class Lottery {
     int guessDigit1 = guess / 10;
     int guessDigit2 = guess % 10;
 
-    System.out.println("The lottery number is " + lottery);
+    System.out.println("The lottery number is " + ((lottery>=10)?lottery:("0"+lottery)));
 
     // Check the guess
     if (guess == lottery)
