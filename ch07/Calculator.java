@@ -23,8 +23,8 @@ public class Calculator {
                 break;
       case '.': 
       case '*': result = Integer.parseInt(args[0]) *
-              Integer.parseInt(args[2]);
-               break;
+                         Integer.parseInt(args[2]);
+                break;
                 
       case '/': result = Integer.parseInt(args[0]) /
                          Integer.parseInt(args[2]);

@@ -9,7 +9,7 @@ public class PrimeNumberMethod {
   public static void printPrimeNumbers(int numberOfPrimes) {
     final int NUMBER_OF_PRIMES_PER_LINE = 10; // Display 10 per line
     int count = 0; // Count the number of prime numbers
-    int number = 2; // A number to be tested for primeness
+    int number = 1; // A number to be tested for primeness
 
     // Repeatedly find prime numbers
     while (count < numberOfPrimes) {

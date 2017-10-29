@@ -53,7 +53,7 @@ public class CountLettersInArray {
 
     // For each lowercase letter in the array, count it
     for (int i = 0; i < chars.length; i++)
-      counts[chars[i] - 'a']++;
+      counts[chars[i] - 'a']+=1;
 
     return counts;
   }
