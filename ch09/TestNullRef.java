@@ -15,7 +15,6 @@ public class TestNullRef {
 		System.out.println("isScienceMajor? "+ student.isScienceMajor);
 		
 		/*Java assigns no default value to a local variable inside a method. 
-		
 		int x;  //x has no default value
 		System.out.println("x=? "+x);  */
 
