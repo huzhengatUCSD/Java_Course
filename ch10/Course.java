@@ -2,7 +2,7 @@ package ch10;
 
 public class Course {
 	private String courseName;
-	private String[] students = new String[100];
+	private String[] students = new String[30];
 	private int numberOfStudents;
 
 	public Course(String courseName) {
@@ -10,7 +10,11 @@ public class Course {
 	}
 
 	public void addStudent(String student) {
+		
 		students[numberOfStudents] = student;
+		if(numberOfStudents==(students.length-1)) {
+			increaseSize();
+		}
 		numberOfStudents++;
 	}
 
@@ -33,11 +37,12 @@ public class Course {
 		return courseName;
 	}  
 
-/*	private void increaseSize() {
+	private void increaseSize() {
+		System.out.println("resize students list to "+ (students.length * 2));
 		String[] temp = new String[students.length * 2];
 		System.arraycopy(students, 0, temp, 0, students.length);
 		students = temp;
-	} */
+	} 
 
 	public void dropStudent(String student) {
 		for (int i = 0; i < numberOfStudents; i++) {

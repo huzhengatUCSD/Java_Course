@@ -5,7 +5,8 @@ import java.math.*;
 public class LargeFactorial {
   public static void main(String[] args) {
     System.out.println("100! is \n" + factorial(100));
-    
+    System.out.println(String.format("%b", 26));
+    System.out.println(String.format("%x", 26));
   }
 
   public static BigInteger factorial(long n) {

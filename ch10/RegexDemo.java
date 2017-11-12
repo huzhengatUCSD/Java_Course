@@ -24,9 +24,9 @@ public class RegexDemo {
          * 4，获取。
          *      
          */
-         
+       	checkQQ();
         functionDemo_3();
-        checkQQ();
+        
     }
     
 
@@ -84,7 +84,7 @@ public class RegexDemo {
      */
     public  static void functionDemo_4() {
          
-        String str = "da jia hao,ming tian bu fang jia!";
+        String str = "da jia hao, ming tian bu fang jia!";
          
         String regex = "\\b[a-z]{3}\\b";
          
@@ -137,7 +137,7 @@ public class RegexDemo {
         for(String name : names){
             System.out.println(name);
         }
-         
+        
     }
     /*
      * 演示匹配。 
