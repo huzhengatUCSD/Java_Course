@@ -25,7 +25,7 @@ public class RegexDemo {
          *      
          */
        	checkQQ();
-        functionDemo_3();
+        functionDemo_2();
         
     }
     

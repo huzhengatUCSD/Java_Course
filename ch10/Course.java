@@ -53,8 +53,12 @@ public class Course {
 				}
 
 				numberOfStudents--;
-				break;
+				
 			}
 		}
+		
 	}
+	public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode())+" hahaha";
+    }
 }

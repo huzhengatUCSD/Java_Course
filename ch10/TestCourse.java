@@ -4,14 +4,14 @@ public class TestCourse {
   public static void main(String[] args) {
     Course course1 = new Course("Data Structures");
     Course course2 = new Course("Database Systems");
-
+    
     course1.addStudent("Peter Jones");
     course1.addStudent("Brian Smith");
     course1.addStudent("Anne Kennedy");
     course1.addStudent("S1");
     course1.addStudent("S2");
     course1.addStudent("S3");
-    course1.addStudent("S4");
+    course1.addStudent("S1");
     course1.addStudent("S5");
     course1.addStudent("S6");
     course1.addStudent("S7");

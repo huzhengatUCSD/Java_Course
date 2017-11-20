@@ -5,7 +5,10 @@ class Parent{
      }
     }
 class Child extends Parent{
-    private void function(){
+	public Child() {
+		super();
+	}
+    public void function(){
         System.out.println("I am in Child!");
      }
 }

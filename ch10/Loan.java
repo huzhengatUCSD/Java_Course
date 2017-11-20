@@ -1,10 +1,11 @@
 package ch10;
+import java.util.Date;
 
 public class Loan {
   private double annualInterestRate;
   private int numberOfYears;
   private double loanAmount;
-  private java.util.Date loanDate;
+  private Date loanDate;
 
   /** Default constructor */
   public Loan() {

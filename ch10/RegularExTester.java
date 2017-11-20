@@ -8,8 +8,8 @@ public class RegularExTester
 	public static void main(String[] args) {
 		
 		System.out.println("Java Java Java".replaceFirst("v\\w", "wi"));
-		System.out.println("Java Java Java".replaceAll("v\\w", "wi"));
-		String[] s = "Java1HTML2Perl".split("\\d");
+		System.out.println("Java Java Java".replaceAll("a\\W", "wi"));
+		String[] s = "Java1HTML12345677Perl".split("\\d");
 		for(int i=0;i<s.length;i++){
 			System.out.print(s[i]+" ");
 		}
@@ -21,7 +21,7 @@ public class RegularExTester
 
 		// 把字符串中的"aaa"、"aa"或者"a"全部替换为"*"
 		// 打印*b*c*
-		System.out.println("aaabaaca".replaceAll("a{1,3}", "\\*"));
+		System.out.println("aaabaaca".replaceAll("a+", "\\*"));
 
 		// 把字符串中的数字全部替换为"z"
 		// 打印zzzazzbzzcc
@@ -33,7 +33,7 @@ public class RegularExTester
 
 		// 把字符串中的"."全部替换为"\"
 		// 打印com\abc\dollapp\Doll
-		System.out.println("com.abc.dollapp.Doll".replaceAll(".", "\\"+"\\"));
+		System.out.println("com.abc.dollapp.Doll".replaceAll("\\.", "\\"+"\\"));
 
 		// 把字符串中的"a.b"全部替换为"-"
 		// "a.b"表示长度为3的字符串，以"a"开头，以"b"结尾
