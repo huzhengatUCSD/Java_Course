@@ -17,8 +17,8 @@ public class UseFile {
     if(!file.exists())file.createNewFile();
 
     listDir(dir1);
-
-    //deleteDir(dir1); 
+    System.out.println("=====Deleting dirs made just right now======");
+    deleteDir(dir1); 
   }
   
   /** 察看目录信息 */
@@ -49,16 +49,19 @@ public class UseFile {
     //如果file代表文件，就删除该文件
     if(file.isFile()){
       file.delete();
+      System.out.println("Delete File "+file.toString());
       return;
     }
     
     //如果file代表目录，先删除目录下的所有子目录和文件
     File[] lists=file.listFiles();
-    for(int i=0;i<lists.length;i++)
+    for(int i=0;i<lists.length;i++) {
        deleteDir(lists[i]);  //递归删除当前目录下的所有子目录和文件
-    
+       
+    }
     //最后删除当前目录    
     file.delete();
+    System.out.println("Delete Directory "+file.toString());
   }
 }
 

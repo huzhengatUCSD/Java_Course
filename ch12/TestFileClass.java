@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class TestFileClass {
   public static void main(String[] args) throws IOException {
-    java.io.File file = new java.io.File("../javaprograming/./image/us.gif");
+    java.io.File file = new java.io.File("../Java_Course/./res/ch01/hello_unicode.txt");
     System.out.println("Does it exist? " + file.exists());
     System.out.println("The file has " + file.length() + " bytes");
     System.out.println("Can it be read? " + file.canRead());
@@ -17,9 +17,9 @@ public class TestFileClass {
       file.getAbsolutePath());
     System.out.println("Canonical path is " +
     	      file.getCanonicalPath());
-    System.out.println("File name is" +
+    System.out.println("File name is " +
   	      file.getName());
-    System.out.println("Parent Directory of the file is" +
+    System.out.println("Parent Directory of the file is " +
   	      file.getParent());
     System.out.println("Last modified on " +
       new java.util.Date(file.lastModified()));

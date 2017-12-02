@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class WebCrawler {
   public static void main(String[] args) {
     java.util.Scanner input = new java.util.Scanner(System.in);
-    System.out.print("Enter a URL: ");
+    System.out.print("Enter a URL: "); //http://www.265.com
     String url = input.nextLine(); 
     crawler(url); // Traverse the Web from the a starting url
   }
