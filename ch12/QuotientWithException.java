@@ -27,6 +27,7 @@ public class QuotientWithException {
       System.out.println("Exception: an integer " + 
         "cannot be divided by zero ");
     }
+    catch(Exception ex) {}
 
     System.out.println("Execution continues ...");
   }
