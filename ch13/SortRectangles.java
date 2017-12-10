@@ -9,8 +9,7 @@ public class SortRectangles {
       new ComparableRectangle(1.4, 25.4)};
     java.util.Arrays.sort(rectangles);
     for (Rectangle rectangle: rectangles) {
-      System.out.print(rectangle + " "); 
-      System.out.println();
+      System.out.println(rectangle); 
     }
   }
 }

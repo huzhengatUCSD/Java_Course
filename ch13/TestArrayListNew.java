@@ -15,7 +15,7 @@ public class TestArrayListNew {
 		System.out.println("list1 is "+list1);
 		System.out.println("list2 is "+list2);
 		System.out.println("list3 is "+list3);
-		String
+		
 
 	}
 }

@@ -7,10 +7,11 @@ import java.util.*;
 public class TestCalendar {
   public static void main(String[] args) {
     // Construct a Gregorian calendar for the current date and time
+	String[] months = {"Januray","Feburary","March","April","May","June","July","August","Semptember","October","November","December"};
     Calendar calendar = new GregorianCalendar();
     System.out.println("Current time is " + new Date());
     System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
-    System.out.println("MONTH: " + (calendar.get(Calendar.MONTH)+1));
+    System.out.println("MONTH: " + months[calendar.get(Calendar.MONTH)]);
     System.out.println("DATE: " + calendar.get(Calendar.DATE));
     System.out.println("HOUR: " + calendar.get(Calendar.HOUR));
     System.out.println("HOUR_OF_DAY: " + 
@@ -29,11 +30,11 @@ public class TestCalendar {
       calendar.get(Calendar.WEEK_OF_YEAR));
     System.out.println("AM_PM: " + calendar.get(Calendar.AM_PM));
     
-    // Construct a calendar for November 18, 2016
-    Calendar calendar1 = new GregorianCalendar(2016, 10, 18);
+    // Construct a calendar for December 4, 2017
+    Calendar calendar1 = new GregorianCalendar(2017, 12, 4);
     String[] dayNameOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", 
         "Thursday", "Friday", "Saturday"};
-    System.out.println("November 18, 2016 is a " + 
+    System.out.println("December 04, 2017 is a " + 
       dayNameOfWeek[calendar1.get(Calendar.DAY_OF_WEEK) - 1]);
     //format print
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss EEEE");

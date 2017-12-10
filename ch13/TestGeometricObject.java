@@ -12,9 +12,11 @@ public class TestGeometricObject {
 
     // Display circle
     displayGeometricObject(geoObject1);
+    //geoObject1.display();
 
     // Display rectangle
     displayGeometricObject(geoObject2);
+    geoObject2.display();
   }
 
   /** A method for comparing the areas of two geometric objects */

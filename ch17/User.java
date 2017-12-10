@@ -32,14 +32,14 @@ public class User implements Serializable {
 
 	private void writeObject(ObjectOutputStream stream) throws IOException {
 		stream.defaultWriteObject(); // 先按默认方式序列化
-		stream.writeObject(change(password.getBytes()));
+		stream.writeObject(change(password.getBytes())); //把密码这个非Serializable的部分加密后，在存成2进制流
 	}
 
 	private void readObject(ObjectInputStream stream) throws IOException,
 			ClassNotFoundException {
 		stream.defaultReadObject(); // 先按默认方式反序列化
-		byte[] buff = (byte[]) stream.readObject();
-		password = new String(change(buff));
+		byte[] buff = (byte[]) stream.readObject();//从二进制流中恢复非默认序列化的加了密的密码部分
+		password = new String(change(buff)); //解密
 	}
 
 	public static void main(String[] args) throws Exception {
