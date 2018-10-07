@@ -27,7 +27,7 @@ public class Adroid{
    * Droid walks
    */
   public void walk(){
-    System.out.println("I am walking towards "+ name +"/'s home");
+    System.out.println("I am walking towards "+ name +"\'s home");
  
   }  
 }
