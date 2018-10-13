@@ -11,8 +11,8 @@ public class ScannerDemo {
         System.out.println("next方式接收：");
         // 判断是否还有输入
         if (scan.hasNext()) {
-            String str1 = scan.next();
-            System.out.println("输入的数据为：" + str1);
+            String str= scan.next();
+            System.out.println("输入的数据为：" + str);
         }
         scan.close();
     }
