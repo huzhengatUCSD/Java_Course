@@ -23,7 +23,7 @@ public class EnumTest {
                 System.out.println("Fridays are better.");
                 break;
                          
-            case SATURDAY: 
+            case SATURDAY:                            
             case SUNDAY:
                 System.out.println("Weekends are best.");
                 break;
