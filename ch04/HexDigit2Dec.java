@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class HexDigit2Dec {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+    String hexString="";
     System.out.print("Enter a hex digit: ");
-    String hexString = input.nextLine();
-    
+    if(input.hasNextLine()) {
+       hexString = input.nextLine();
+    }
     // Check if the hex string has exactly one character
     if (hexString.length() != 1) {
       System.out.println("You must enter exactly one character");
