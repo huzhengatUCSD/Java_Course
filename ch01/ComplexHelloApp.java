@@ -6,7 +6,7 @@ public class ComplexHelloApp{
 	public void runHello () {
 		FileResource res = new FileResource(".//res//ch01//hello_unicode.txt" );
 		for (String line : res.lines()) {
-			System.out.print(line+"\n");
+			System.out.print(line+ "\n");
 		}
 		
 	}
