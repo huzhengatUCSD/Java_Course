@@ -3,6 +3,7 @@ public class TestReturnGradeMethod {
   public static void main(String[] args) {
     System.out.print("The grade is " + getGrade(78.5));
     System.out.print("\nThe grade is " + getGrade(59.5));
+    
   }
 
   public static char getGrade(double score) {
@@ -17,4 +18,5 @@ public class TestReturnGradeMethod {
     else
       return 'F';
   }
+
 }
