@@ -6,7 +6,7 @@ public class TestSum {
     double sum = 0;
     int count=1;
     // Add 0.01, 0.02, ..., 0.99, 1 to sum\
-    for (double i = 0.01; i <= 1.0; i = i + 0.01){
+    for (float i = 0.01F; i <= 1.0F; i = i + 0.01F){
     	     System.out.println(count+  " : "+ i);
     	     count++;
          sum += i;
