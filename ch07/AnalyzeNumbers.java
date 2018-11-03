@@ -14,7 +14,7 @@ public class AnalyzeNumbers {
       numbers[i] = Math.random()*100;
       sum += numbers[i];
     }
-    
+
     double average = sum / n;
 
     int count = 0; // The number of elements above average
