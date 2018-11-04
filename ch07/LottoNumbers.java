@@ -39,7 +39,7 @@ public class LottoNumbers {
         }
       }
 
-      System.out.println("\n==========================");
+    System.out.println("\n==========================");
       // Display result
     if (allCovered)
       System.out.println("The tickets cover all numbers");
