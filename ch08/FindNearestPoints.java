@@ -7,6 +7,7 @@ public class FindNearestPoints {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter the number of points: ");
     int numberOfPoints = input.nextInt();
+    //a logic bug exists, please revise it.
 
     // Create an array to store points
     double[][] points = new double[numberOfPoints][2];
