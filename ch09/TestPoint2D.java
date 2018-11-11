@@ -3,6 +3,7 @@ package ch09;
 import java.util.Scanner;
 import javafx.geometry.Point2D;
 
+@SuppressWarnings("restriction")
 public class TestPoint2D {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
@@ -22,5 +23,6 @@ public class TestPoint2D {
       p1.distance(p2));
     System.out.println("The distance between p1 and p2 is " + 
     	      p1.distance(x2,y2));
+    input.close();
   }
 }

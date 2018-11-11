@@ -31,11 +31,10 @@ public class TotalArea {
   public static void printCircleArray(
       CircleWithPrivateDataFields[] circleArray) {
     System.out.printf("%-30s%-15s\n", "Radius", "Area");
-    for (int i = 0; i < circleArray.length; i++) {
-      System.out.printf("%-30f%-15f\n", circleArray[i].getRadius(),
-        circleArray[i].getArea());
+    for (CircleWithPrivateDataFields circle: circleArray) {
+        System.out.printf("%-30f%-15f\n", circle.getRadius(),
+        		circle.getArea());
     }
-
     System.out.println("-----------------------------------------");
 
     // Compute and display the result
