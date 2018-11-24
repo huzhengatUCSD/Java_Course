@@ -60,6 +60,6 @@ public class RectangleFromSimpleGeometricObject
   }
   @Override 
   public String toString(){
-    return new String("hello world");
+    return "hello world";
   }
 }
