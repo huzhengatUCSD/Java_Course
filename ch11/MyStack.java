@@ -13,7 +13,7 @@ public class MyStack {
     return list.size();
   }
 
-  public Object peek() {
+  public Object peak() {
     return list.get(getSize() - 1);
   }
 
