@@ -14,12 +14,20 @@ public class MainCatcherNew{
   }
   public static void main(String args[]) throws Exception{
     try{
+      new MainCatcherNew().method();
+    }catch(SpecialException e){
+      e.printStackTrace();
+    }
+  }
+
+  public void method() throws Exception{
+    try{
 	  System.out.println("Begin");
-      new MainCatcherNew().methodB(1);
+      methodB(1);
       System.out.println("main");
     }catch(SpecialException e){
       System.out.println("Wrong");
-	  //System.exit(0);	  
+//	  System.exit(0);
 	  throw e;
     }finally{
        System.out.println("Finally");

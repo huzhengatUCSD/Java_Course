@@ -12,7 +12,8 @@ public class ReadData {
     try(
     		Scanner input = new Scanner(file);
     	){
-    	// Read data from a file
+//    		input.useDelimiter("[; ,|:\n\r\t]");
+//    	    Read data from a file
     	    while (input.hasNext()) {
     		   String firstName = input.next();
     		   String mi = input.next();
