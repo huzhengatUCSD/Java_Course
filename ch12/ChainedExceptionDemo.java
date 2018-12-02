@@ -1,5 +1,6 @@
 package ch12;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
@@ -8,21 +9,25 @@ public class ChainedExceptionDemo {
     try {
       method1();
     }
-    catch (ClassNotFoundException ex) {
+    catch (IOException ex) {
       ex.printStackTrace();
+//      ex.getCause().printStackTrace();
     }
   }
 
-  public static void method1() throws ClassNotFoundException {
+  public static void method1() throws IOException {
     try {
       method2();
     }
     catch (IOException ex) {
-      throw new ClassNotFoundException("New info from method1", ex);
+      /*IOException ce= new IOException("New IOException occurs at method1");
+      ce.initCause(ex);
+      throw ce;*/
+      throw new IOException("New IOException occurs at method1",ex);
     }
   }
 
-  public static void method2() throws IOException {
-    throw new IOException("New info from method2");
+  public static void method2() throws FileNotFoundException {
+    throw new FileNotFoundException("file not found exception occurs at method2");
   }
 }
