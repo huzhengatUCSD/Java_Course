@@ -12,4 +12,6 @@ public class Demopro1
 	{
 		System.out.println("ִ执行"+this+"保护类型成员方法");
 	}
+	protected int pa;
+
 } 

@@ -40,7 +40,7 @@ public class UseFile {
                    +" canRead:"+f.canRead()
                    +" lastModified:"+new Date(f.lastModified()));
       else  //如果为目录，就递归调用listDir()方法
-        listDir(f);  
+        listDir(f);
     }
   }
   
