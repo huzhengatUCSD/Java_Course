@@ -1,17 +1,19 @@
 package ch12;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner; 
 
 public class DirectorySize {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException{
     // Prompt the user to enter a directory or a file
     System.out.print("Enter a directory or a file: ");    
     Scanner input = new Scanner(System.in);
     String directory = input.nextLine();
-    
+    File dirx=new File(directory);
+    System.out.println(dirx.getCanonicalPath());
     // Display the size
-    System.out.println(getSize(new File(directory)) + " bytes");
+    System.out.println(getSize(dirx) + " bytes");
   }
 
   public static long getSize(File file) {

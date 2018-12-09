@@ -87,6 +87,10 @@ public class Rational extends Number implements Comparable<Rational> {
       return false;
   }
 
+  @Override
+  public int hashCode(){
+    return (int)(this.numerator*121+this.denominator*7);
+  }
   @Override // Implement the abstract intValue method in Number 
   public int intValue() {
     return (int)doubleValue();

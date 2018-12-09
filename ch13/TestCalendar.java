@@ -30,17 +30,17 @@ public class TestCalendar {
       calendar.get(Calendar.WEEK_OF_YEAR));
     System.out.println("AM_PM: " + calendar.get(Calendar.AM_PM));
     
-    // Construct a calendar for December 4, 2017
-    Calendar calendar1 = new GregorianCalendar(2017, 12, 4);
+    // Construct a calendar for December 10, 2018
+    Calendar calendar1 = new GregorianCalendar(2018, 11, 10);
     String[] dayNameOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", 
         "Thursday", "Friday", "Saturday"};
-    System.out.println("December 04, 2017 is a " + 
+    System.out.println("December 10, 2018 is a " +
       dayNameOfWeek[calendar1.get(Calendar.DAY_OF_WEEK) - 1]);
     //format print
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss EEEE");
 	GregorianCalendar cal = new GregorianCalendar();
 	cal.setTime(new Date()); // cal表示当前日期
-	System.out.println("当前时间: " + dateFormat.format(cal.getTime()));
+	System.out.println("当前时间: " + dateFormat.format(cal.getTime())+"\n"+cal.get(Calendar.YEAR)+"年已经过去了 "+(cal.get(Calendar.DAY_OF_YEAR)-1)+" 天了！");
 
 	// 改为星期五
 	cal.set(GregorianCalendar.DAY_OF_WEEK, GregorianCalendar.FRIDAY);

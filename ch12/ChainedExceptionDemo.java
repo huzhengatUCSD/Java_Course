@@ -19,11 +19,11 @@ public class ChainedExceptionDemo {
     try {
       method2();
     }
-    catch (IOException ex) {
-      /*IOException ce= new IOException("New IOException occurs at method1");
+    catch (FileNotFoundException ex) {
+      IOException ce= new IOException("New IOException occurs at method1");
       ce.initCause(ex);
-      throw ce;*/
-      throw new IOException("New IOException occurs at method1",ex);
+      throw ce;
+      //throw new IOException("New IOException occurs at method1",ex);
     }
   }
 
