@@ -37,7 +37,7 @@ public class AccountWithoutSync {
       return balance;
     }
 
-    public synchronized void deposit(int amount) {
+    public  void deposit(int amount) {
       int newBalance = balance + amount;
 
       // This delay is deliberately added to magnify the
