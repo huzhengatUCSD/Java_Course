@@ -60,22 +60,24 @@ class PrintNum implements Runnable {
   }
 
   @Override /** Tell the thread how to run */
-  /*public void run() {
-    for (int i = 1; i <= lastNum; i++) {
-      System.out.print(" " + i);
-      
-      try {
-          if (i >=10) Thread.sleep(20);
-        }
-        catch (InterruptedException ex) {
+  public void run() {
+    try
+    {
+        for (int i = 1; i <= lastNum; i++) {
+            System.out.print(" " + i);
+//            Thread.yield();
+            if (i >=10) Thread.sleep(20);
         }
 
     }
+    catch (InterruptedException ex) {
+    }
+
   }
-  */
-  
+
+
   //@Override *//** Tell the thread how to run *//*
-  public void run() {
+  /*public void run() {
 	  Thread thread4 = new Thread(
 	new PrintChar('c', 40));
 	  thread4.start();
@@ -87,7 +89,7 @@ class PrintNum implements Runnable {
 	  }
 	  catch (InterruptedException ex) {
 	  }
-	}
+  }*/
 
 
   
