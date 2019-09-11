@@ -32,16 +32,16 @@ public class ShowCurrentTime {
       + currentMinute + ":" + currentSecond + " GMT");
     
     // Directly print date
-    System.out.println(date);
+    System.out.println("Current time is "+date);
     System.out.println("The elapsed time since Jan 1, 1970 is " +
     	    date.getTime()+ " millisecondes");
     
     
-    // Calendar convension and output
+    // Calendar convention and output
     Calendar c = Calendar.getInstance();
     c.setTimeZone(TimeZone.getTimeZone("GMT+8"));
     c.setTime(date);
-    System.out.println("Current time is " +c.get(Calendar.HOUR_OF_DAY) + ":" + c.get(Calendar.MINUTE)+":"+c.get(Calendar.SECOND)+" " +c.getTimeZone().getID());
+    System.out.println("Current time is " +c.get(Calendar.HOUR_OF_DAY) + ":" + c.get(Calendar.MINUTE)+":"+c.get(Calendar.SECOND)+" "+c.getTimeZone().getID());
     
     
   }
