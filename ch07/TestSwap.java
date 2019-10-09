@@ -26,5 +26,13 @@ public class TestSwap {
 		}
 		return result;
 	}
+	
+	public static double[] reverse(double[] list) {
+		double[] result=new double[list.length];
+		for(int i=0, j=list.length-1;i<list.length;i++,j--) {
+			result[j]=list[i];
+		}
+		return result;
+	}
 
 }
