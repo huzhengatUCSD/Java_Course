@@ -1,6 +1,7 @@
 # Exercises 
 01 2019/09/12 ~ 2019/09/19(deadline)   
 02 2019/09/19 ~ 2019/09/26(deadline) 
+03 2019/10/10 ~ 2019/10/17(deadline)
   
 
 # Java_Course Lecture Slides and SRC
