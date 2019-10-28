@@ -18,8 +18,8 @@ public class RfPrivateTest {
                 user.setAccessible(true);  // 获取user访问权限
                 name.setAccessible(true);// 获取name访问权限
                 //给user 和 name 赋值
-                //user.set(bc,"ok");
-                //name.set(bc,"hh");
+                user.set(bc,"ok");
+                name.set(bc,"hh");
                 System.out.println("bc.user="+user.get(bc));
                 System.out.println("bc.name="+name.get(bc)+"\n===========");
             } catch (NoSuchFieldException e) {
