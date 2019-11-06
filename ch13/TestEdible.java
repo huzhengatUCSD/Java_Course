@@ -40,6 +40,7 @@ class Tiger extends Animal {
 
 abstract class Fruit implements Edible {
   // Data fields, constructors, and methods omitted here
+	
 }
 
 class Apple extends Fruit {
