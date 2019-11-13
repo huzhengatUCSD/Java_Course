@@ -20,9 +20,9 @@ public class ExLoss {
 	public static void main(String args[]) {
 		try {
 			System.out.println(new ExLoss().methodB(1)); // 打印100
-			System.out.println("No Exception");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+							System.out.println("No Exception");
+						} catch (Exception e) {
+							System.out.println(e.getMessage());
 		}
 	}
 }
