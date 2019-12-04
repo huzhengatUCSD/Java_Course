@@ -6,7 +6,8 @@
 05 2019/10/24 ~ 2019/10/31(deadline)  
 06 2019/10/31 ~ 2019/11/07(deadline)    
 07 2019/11/07 ~ 2019/11/14(deadline)   
-08 2019/11/14 ~ 2019/11/21(deadline)  
+08 2019/11/14 ~ 2019/11/28(deadline)   
+09 2019/12/05 ~ 2019/12/19(deadline)   
    
 
 # refer to the Courese PractiseofProgramming
