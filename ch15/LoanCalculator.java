@@ -49,7 +49,7 @@ public class LoanCalculator extends Application {
         tfTotalPayment.setEditable(false);
         GridPane.setHalignment(btCalculate, HPos.RIGHT);
 
-        // Process events
+        // Process events with lambda expression
         btCalculate.setOnAction(e -> calculateLoanPayment());
 
         // Create a scene and place it in the stage
@@ -71,9 +71,9 @@ public class LoanCalculator extends Application {
         Loan loan = new Loan(interest, year, loanAmount);
 
         // Display monthly payment and total payment
-        tfMonthlyPayment.setText(String.format("$%.2f",
+        tfMonthlyPayment.setText(String.format("￥%.2f",
                 loan.getMonthlyPayment()));
-        tfTotalPayment.setText(String.format("$%.2f",
+        tfTotalPayment.setText(String.format("￥%.2f",
                 loan.getTotalPayment()));
     }
 

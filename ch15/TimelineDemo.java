@@ -33,7 +33,7 @@ public class TimelineDemo extends Application {
 
         // Create an animation for alternating text
         Timeline animation = new Timeline(
-                new KeyFrame(Duration.millis(500), eventHandler));
+                new KeyFrame(Duration.millis(1500), eventHandler));
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play(); // Start animation
 
@@ -52,5 +52,13 @@ public class TimelineDemo extends Application {
         primaryStage.setTitle("TimelineDemo"); // Set the stage title
         primaryStage.setScene(scene); // Place the scene in the stage
         primaryStage.show(); // Display the stage
+    }
+    
+    /**
+     * The main method is only needed for the IDE with limited
+     * JavaFX support. Not needed for running from the command line.
+     */
+    public static void main(String[] args) {
+        launch(args);
     }
 }

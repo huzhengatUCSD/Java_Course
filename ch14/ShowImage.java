@@ -1,5 +1,7 @@
 package ch14;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
@@ -9,13 +11,14 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+
 public class ShowImage extends Application {
   @Override // Override the start method in the Application class
   public void start(Stage primaryStage) {
     // Create a pane to hold the image views
     Pane pane = new HBox(10);
     pane.setPadding(new Insets(5, 5, 5, 5));
-    Image image = new Image("image/cn.gif");
+    Image image = new Image("image/flag_cn.gif");
     pane.getChildren().add(new ImageView(image));
     
     ImageView imageView2 = new ImageView(image);

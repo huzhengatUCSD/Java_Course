@@ -25,7 +25,7 @@ public class FontDemo extends Application {
     // Create a label and set its properties
     Label label = new Label("JavaFX");
     label.setFont(Font.font("Times New Roman", 
-      FontWeight.BOLD, FontPosture.ITALIC, 20));
+      FontWeight.BOLD, FontPosture.ITALIC, 50));
     pane.getChildren().add(label);
 
     // Create a scene and place it in the stage
