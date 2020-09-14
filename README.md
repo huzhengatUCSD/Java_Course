@@ -6,11 +6,11 @@
 <https://github.com/huzhengatUCSD/PractiseofProgramming>
 
 # Java_Course Lecture Slides and SRC
-Introduction to Java Programming Comprehensive Version 10th Edition by Liang (to be  compatible with 11th Edition)  
+Java Programming and Data Structures Comprehensive version Eleventh Edition by Liang  
 
 Core Java Volume I-- Fundamentals  
 
-# Updated at 2019 Autumn 
+# Updated at 2020 Autumn 
 Since 2016 Autumn
 
 
