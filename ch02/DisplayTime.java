@@ -16,5 +16,6 @@ public class DisplayTime {
     System.out.println(seconds + " seconds is " + hours + " hours and "  + minutes + 
       " minutes and " + remainingSeconds + " seconds");  
     input.close();
+    
   }
 }
