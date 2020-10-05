@@ -1,7 +1,7 @@
 # Exercises 
 Exercise_01: closed 
 
-Exercise_02: deadline 13/10 or 15/10.
+Exercise_02: deadline 13/10 or 15/10
    
 
 # refer to the Courese PractiseofProgramming
