@@ -15,6 +15,7 @@ public class ManagerTest
       Manager boss = new Manager("Carl Cracker", 80000, 1987, 12, 15);
       boss.setBonus(5000);
       
+      
 
       Employee[] staff = new Employee[3];
 
@@ -25,8 +26,10 @@ public class ManagerTest
       staff[2] = new Employee("Tommy Tester", 40000, 1990, 3, 15);
 
       // print out information about all Employee objects
-      for (Employee e : staff)
+      for (Employee e : staff) {
          System.out.println("name=" + e.getName() + ",salary=" + e.getSalary());
+         e.show();
+      }  
    }
 }
 
@@ -60,6 +63,14 @@ class Employee
       double raise = salary * byPercent / 100;
       salary += raise;
    }
+   
+   private void printThis() {
+	   System.out.println(this);
+   }
+
+   public void show() {
+	   this.printThis();
+   }
 
    private String name;
    private double salary;
@@ -92,5 +103,10 @@ class Manager extends Employee
       bonus = b;
    }
 
+   /*@Override 
+   public String toString(){
+     return "I am the boss";
+   }*/
+   
    private double bonus;
 }

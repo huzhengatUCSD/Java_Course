@@ -2,16 +2,14 @@ package ch11;
 
 public class DynamicBindingDemo {
   public static void main(String[] args) {
-	Object o = new GraduateStudent(); // implicit casting
+	Object o1 = new GraduateStudent(); // implicit casting 向上转型
 	
-	Object o1 = new Object();
-	
-	if (o1 instanceof GraduateStudent) {
+	/*if (o1 instanceof GraduateStudent) {
 	  System.out.println("Never got here");
-	  GraduateStudent gs = (GraduateStudent)o1; // explicit casting
-	}
+	  GraduateStudent gs = (GraduateStudent)o1; // explicit casting 向下转型
+	}*/
 	
-    m(o);
+    m(o1);
     m(new Student());
     m(new Person());
     m(new Object());

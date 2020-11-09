@@ -8,6 +8,7 @@ class Child extends Parent{
 	public Child() {
 		super();
 	}
+	@Override
     public void function(){
         System.out.println("I am in Child!");
      }
@@ -17,6 +18,6 @@ public class RTpolyTest{
        Parent pl=new Parent( );
        Parent p2=new Child( );
           pl.function( );
-          p2.function( );  //编译出错
+          p2.function( );  
      }
 }

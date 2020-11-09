@@ -58,8 +58,9 @@ public class RectangleFromSimpleGeometricObject
 			  this.getArea());
 
   }
+   
   @Override 
   public String toString(){
-    return "hello world";
+    return "test for rectangle hello world";
   }
 }

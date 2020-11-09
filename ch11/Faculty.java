@@ -7,14 +7,12 @@ public class Faculty extends Employee {
 	}
 
 	public Faculty() {
-		//super();
 		System.out.println("(4) Faculty's no-arg constructor is invoked");
-
 	}
 }
 class Employee extends People {
 	public Employee() {
-		this("(2) Invoke Employee’s overloaded constructor with String type parameter s");
+		//this("(2) Invoke Employee’s overloaded constructor with String type parameter s");
 		System.out.println("(3) Employee's no-arg constructor is invoked");
 	}
 
