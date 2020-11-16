@@ -13,7 +13,7 @@ Exercise_06: deadline 17/11 or 19/11
 
 Exercise_07: deadline 24/11 or 26/11
 
-# refer to the Courese PractiseofProgramming
+# refer to the Course PractiseofProgramming
 <https://github.com/huzhengatUCSD/PractiseofProgramming>
 
 # Java_Course Lecture Slides and SRC
