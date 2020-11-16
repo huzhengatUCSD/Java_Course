@@ -12,15 +12,14 @@ public class ReadData {
     try(
     		Scanner input = new Scanner(file);
     	){
-//    		input.useDelimiter("[; ,|:\n\r\t]");
+    		input.useDelimiter("[; ,|:\n\r\t]");
 //    	    Read data from a file
     	    while (input.hasNext()) {
     		   String firstName = input.next();
     		   String mi = input.next();
     		   String lastName = input.next();
     		   int score = input.nextInt();
-   		   System.out.print(input.nextLine());
-    		   
+   		       System.out.print(input.nextLine());   
     		   System.out.println(
     				firstName + " " + mi + " " + lastName + " " + score);
     	}
