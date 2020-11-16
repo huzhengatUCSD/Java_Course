@@ -8,7 +8,7 @@ public class DirectorySize {
   public static void main(String[] args) throws IOException{
     // Prompt the user to enter a directory or a file
     System.out.print("Enter a directory or a file: ");    
-    Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in); //i.e. /Users/zhenghu/Documents/Github/Java_Course
     String directory = input.nextLine();
     File dirx=new File(directory);
     System.out.println(dirx.getCanonicalPath());
