@@ -44,6 +44,6 @@ public class Rectangle extends GeometricObject {
   
   @Override
   public void display(){
-	  // to do something
+    System.out.println("This is a rectangle");
   }
 }

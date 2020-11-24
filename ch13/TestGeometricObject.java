@@ -12,7 +12,7 @@ public class TestGeometricObject {
 
     // Display circle
     displayGeometricObject(geoObject1);
-    //geoObject1.display();
+    geoObject1.display();
 
     // Display rectangle
     displayGeometricObject(geoObject2);

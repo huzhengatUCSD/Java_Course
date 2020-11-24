@@ -5,7 +5,7 @@ import java.math.*;
 public class SortComparableObjects {
   public static void main(String[] args) {
     String[] cities = {"Savannah", "Boston", "Atlanta", "Tampa"};
-    java.util.Arrays.sort(cities);
+    java.util.Arrays.sort(cities);  //Comparable<String>
     for (String city: cities)
       System.out.print(city + " "); 
     System.out.println();

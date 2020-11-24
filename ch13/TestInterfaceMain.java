@@ -15,11 +15,12 @@ interface TestInter {
 /**
  * 接口2继承接口TestInter，重写test()方法
  */
- interface TestInter2 extends TestInter {
+ interface TestInter2 extends TestInter  {
 
     /** 默认方法2 */
+	@Override
     default void test() {
-        System.out.println("TestInter2 的默认方法 test()");
+        System.out.print("TestInter2 的默认方法 test()");
     }
 
 }
@@ -33,11 +34,12 @@ interface TestInter {
 /**
  * 同时实现了两个接口，这两个接口有继承关系，且都包含相同的默认方法，子接口的默认方法
  */
-class TestInterface implements TestInter,TestInter2{
-	/*@Override
+class TestInterface implements TestInter, TestInter2{
+
     public void test() {
-        TestInter.super.test();
-    }*/
+    	 TestInter2.super.test();
+    	 System.out.println(" in TestInterface");
+    }
 }
 
 
@@ -48,7 +50,7 @@ public class TestInterfaceMain {
 
     public static void main(String[] args) {
 
-        TestInterface test = new TestInterface();
+    	TestInter test = new TestInterface();
         test.test(); // TestInter2 的默认方法 test()
 
     }
