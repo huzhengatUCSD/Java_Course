@@ -6,7 +6,17 @@ public class CountOccurrenceOfWords {
   public static void main(String[] args) {
     // Set text in a string
     String text = "Good morning. Have a good class. Afternoon. Have a good time. " +
-      "Have a good visit. Have fun!";
+      "Have a good visit. Have fun!\r\n"
+      + "Lunar samples collected by China's Chang'e 5 robotic probe will soon start their journey toward Earth, according to the China National Space Administration.\r\n" + 
+      "\r\n" + 
+      "The rocks and dust from the moon have been delivered from Chang'e 5's ascender to their final host－the probe's reentry capsule, which will later bring them to Earth.\r\n" + 
+      "\r\n" + 
+      "The 400-kilogram ascender docked with the 2.3-metric ton orbiter-reentry capsule combination early on Sunday morning and then transferred a sealed container holding 2 kilograms of lunar samples into the capsule.\r\n" + 
+      "\r\n" + 
+      "The operation was the first automated rendezvous and docking of any spacecraft in lunar orbit.\r\n" + 
+      "\r\n" + 
+      "The last time two components of a spacecraft docked with each other in lunar orbit was in December 1972 during the final Apollo mission, and that was monitored and controlled by astronauts.\r\n" + 
+      "\r\n";
 
     // Create a TreeMap to hold words as key and count as value
     
