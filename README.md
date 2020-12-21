@@ -15,6 +15,12 @@ Exercise_07: deadline 24/11 or 26/11
 
 Exercise_08: deadline 01/12 or 03/12
 
+Exercise_09: deadline 30/12
+
+Exercise_10: deadline 30/12
+
+Exercise_11: deadline 30/12
+
 # refer to the Course PractiseofProgramming
 <https://github.com/huzhengatUCSD/PractiseofProgramming>
 
