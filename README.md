@@ -21,7 +21,7 @@ Exercise_10: deadline 28/12
 
 Exercise_11: deadline 28/12
 
-# refer to the Course PractiseofProgramming
+# refer to the Course Practise of Programming
 <https://github.com/huzhengatUCSD/PractiseofProgramming>
 
 # Java_Course Lecture Slides and SRC
