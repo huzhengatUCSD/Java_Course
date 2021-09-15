@@ -12,6 +12,8 @@ public class ComplexHelloApp{
 	}
     public static void main(String[] args) {
 	   ComplexHelloApp aHello = new 	ComplexHelloApp();
+	   int i=5;
+
 	   aHello.runHello();
 		
 	}
