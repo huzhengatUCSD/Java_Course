@@ -1,7 +1,9 @@
 # Exercises 
 Exercise_01: deadline 23/09
 
-Exercise_02: 
+Exercise_02: deadline 14/10
+
+Exercise_03: deadline 21/10
 
 
 # refer to the Course Practise of Programming
