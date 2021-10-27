@@ -7,6 +7,8 @@ Exercise_03: deadline 21/10
 
 Exercise_04: deadline 28/10
 
+Exercise_05: deadline 04/11
+
 # refer to the Course Practise of Programming
 <https://github.com/huzhengatUCSD/PractiseofProgramming>
 
