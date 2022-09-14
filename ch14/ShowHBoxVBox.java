@@ -35,7 +35,7 @@ public class ShowHBoxVBox extends Application {
     hBox.setStyle("-fx-background-color: gold");
     hBox.getChildren().add(new Button("Computer Science"));
     hBox.getChildren().add(new Button("Chemistry"));
-    ImageView imageView = new ImageView(new Image("image/us.gif"));
+    ImageView imageView = new ImageView(new Image("image/flag_cn.gif"));
     hBox.getChildren().add(imageView);
     return hBox;
   }
@@ -49,7 +49,7 @@ public class ShowHBoxVBox extends Application {
         new Label("CSCI 2410"), new Label("CSCI 3720")};
 
     for (Label course: courses) {
-      VBox.setMargin(course, new Insets(0, 0, 0, 15));
+      VBox.setMargin(course, new Insets(0, 0, 0, 10));
       vBox.getChildren().add(course);
     }
     

@@ -5,7 +5,7 @@ import java.net.*;
 public class Server {
   private int port=8081;
   private ServerSocket serverSocket;
-
+  
   public Server() throws IOException {
     serverSocket = new ServerSocket(port);
     System.out.println("服务器启动");
@@ -31,8 +31,8 @@ public class Server {
         socket = serverSocket.accept();  //等待客户连接
         System.out.println("New connection accepted " 
                         +socket.getInetAddress().getHostAddress() + ":" +socket.getPort());
-        System.out.println("New connection accepted " 
-                +socket.getInetAddress().getHostName() + ":" +socket.getPort());
+        //System.out.println("New connection accepted " 
+        //        +socket.getInetAddress().getHostName() + ":" +socket.getPort());
         BufferedReader br =getReader(socket);
         PrintWriter pw = getWriter(socket);
 

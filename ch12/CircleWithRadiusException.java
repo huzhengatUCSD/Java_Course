@@ -12,7 +12,8 @@ public class CircleWithRadiusException {
     this(1.0);
   }
 
-  /** Construct a circle with a specified radius */
+  /** Construct a circle with a specified radius 
+ * @throws InvalidRadiusException */
   public CircleWithRadiusException(double newRadius) throws InvalidRadiusException {
     
       setRadius(newRadius);
@@ -25,9 +26,9 @@ public class CircleWithRadiusException {
     return radius;
   }
 
-  /** Set a new radius */
-  public void setRadius(double newRadius)
-      throws InvalidRadiusException {
+  /** Set a new radius 
+ * @throws InvalidRadiusException */
+  public void setRadius(double newRadius)  throws InvalidRadiusException {
     if (newRadius >= 0)
       radius =  newRadius;
     else

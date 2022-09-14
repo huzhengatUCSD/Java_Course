@@ -43,7 +43,7 @@ public class Copy {
       // Continuously read a byte from input and write it to output
       int r, numberOfBytesCopied = 0;
       while ((r = input.read()) != -1) {
-        output.write((byte)r);
+        output.write(r);
         numberOfBytesCopied++;
       }
 

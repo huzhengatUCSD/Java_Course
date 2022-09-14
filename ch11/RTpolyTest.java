@@ -1,9 +1,10 @@
 package ch11;
 
 class Parent{
-    public void function(){ System.out.println("I am in Parent!");
+    public void function(){ 
+    	System.out.println("I am in Parent!");
      }
-    }
+} 
 class Child extends Parent{
 	public Child() {
 		super();

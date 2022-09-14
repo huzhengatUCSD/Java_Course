@@ -158,7 +158,7 @@ public class PingClient{
           if (socketChannel.finishConnect()) {
               selectionKey.cancel();
               target.connectFinish = System.currentTimeMillis();
-			  //System.out.println(target.address+" finishtime: " +target.connectFinish);
+			  System.out.println(target.address+" finishtime: " +target.connectFinish);
               socketChannel.close();
               addFinishedTarget(target);
           }

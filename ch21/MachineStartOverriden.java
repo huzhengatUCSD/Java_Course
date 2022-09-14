@@ -4,7 +4,7 @@ public class MachineStartOverriden extends Thread {
 	private int a = 0;
 
 	public void start() {
-		//super.start();
+		super.start();
 		run();
 	}
 

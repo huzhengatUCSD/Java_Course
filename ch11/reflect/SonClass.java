@@ -6,11 +6,11 @@ public class SonClass extends FatherClass{
     protected int mSonAge;
     public String mSonBirthday;
     private String MSG="Original";
-    private final String FINAL_VALUE="FINAL";
+    private final String FINAL_VALUE;//="FINAL";
     
-   /* public SonClass() {
+    public SonClass() {
     	this.FINAL_VALUE="FINAL";
-    }*/
+    }
     
     public String getFinalValue() {
     	return FINAL_VALUE;

@@ -22,7 +22,7 @@ public class UseFilenameFilter {
 		String[] lists=dir1.list((File dir, String name)->{
 			//System.out.println("根路径：" + dir.getPath() + " 子路径：" + name);
 			File currFile = new File(dir, name);
-			if (!currFile.isDirectory() && name.matches(".*\\.pdf"))
+			if (!currFile.isDirectory() && name.matches(".*\\.pptx"))
 				return true;
 			else
 				return false;

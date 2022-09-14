@@ -6,7 +6,7 @@ public class TestDataStream {
   public static void main(String[] args) {
     try ( // Create an output stream for file temp.dat
       DataOutputStream output =
-        new DataOutputStream(new FileOutputStream("temp.dat"));
+        new DataOutputStream(new FileOutputStream("temp.dat",true));
     ) {
       // Write student test scores to the file
       output.writeUTF("John");

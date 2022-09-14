@@ -27,8 +27,8 @@ public class TestCourse {
     System.out.println();
     
     course1.dropStudent("S1");
- // course1.dropStudent("S1");
- // course1.dropStudent("S7");    
+    course1.dropStudent("S1");
+    course1.dropStudent("S7");    
     System.out.println("Number of students in course1 after drop student: "
       + course1.getNumberOfStudents());
     students = course1.getStudents();

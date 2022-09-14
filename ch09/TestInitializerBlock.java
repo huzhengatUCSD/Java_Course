@@ -8,10 +8,10 @@ public class TestInitializerBlock {
     }
     // Initializer block ends    
 
-    public TestInitializerBlock(){
+    TestInitializerBlock(){
         System.out.println("No-arg Constructor called");
     }
-    public TestInitializerBlock(int x)
+    TestInitializerBlock(int x)
     {
         System.out.println("Parametrized Constructor invoked");
     }

@@ -10,21 +10,21 @@ public class ReflectTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//printFields();
-		//printMethods();
-//		try {
-//			getPrivateMethod();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		try {
-//			modifyPrivateFiled();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		printFields();
+		printMethods();
+		try {
+			getPrivateMethod();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			modifyPrivateFiled();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		try {
 			modifyFinalFiled();
 		} catch (Exception e) {

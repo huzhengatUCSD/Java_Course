@@ -11,7 +11,7 @@ public class ChainedExceptionDemo {
     }
     catch (IOException ex) {
       ex.printStackTrace();
-//      ex.getCause().printStackTrace();
+      ex.getCause().printStackTrace();
     }
   }
 

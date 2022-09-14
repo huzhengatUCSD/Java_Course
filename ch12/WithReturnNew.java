@@ -14,7 +14,7 @@ public class WithReturnNew{
 	      return result;
 	    }catch(SpecialException e){
 	      System.out.println(e.getMessage());
-	      return a;  //return -100;  怎么样都会返回-100
+	      return a;  //怎么样都会返回-100
 	    }finally{
 	      a=100;
 		  System.out.println("Finally");

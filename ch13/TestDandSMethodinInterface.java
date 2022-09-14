@@ -12,7 +12,7 @@ interface MyInterfaceA{
      * to implement this method in the implementation 
      * classes  
      */
-    default void newMethod(){  
+    default public void newMethod(){  
         System.out.println("Newly added default method in myinterfaceA");  
     }  
     /* This is a static method. Static method in interface is
@@ -34,7 +34,7 @@ interface MyInterfaceA{
  */
 interface MyInterfaceB extends MyInterfaceA {
 
-    /** 重写父接口的newMethod方法,USER_NAME常量可以直接被使用 */
+    /** 父接口的newMethod方法,USER_NAME常量可以直接被使用 */
     default public void newMethod() {
         System.out.println("MyInterfaceB 的默认方法 newMethod() ");
     }
@@ -52,7 +52,7 @@ interface MyInterfaceC {
 }
 
 
-public class TestDandSMethodinInterface implements MyInterfaceA, MyInterfaceB {
+public class TestDandSMethodinInterface implements MyInterfaceC, MyInterfaceB {
 	public void existingMethod(String str){           
         System.out.println("String is: "+str);  
     }  
@@ -62,12 +62,12 @@ public class TestDandSMethodinInterface implements MyInterfaceA, MyInterfaceB {
     //Implementation of duplicate default method
     public void newMethod(){ 
     	
-    	MyInterfaceB.super.newMethod();
+    	MyInterfaceC.super.newMethod();
         System.out.println("Re-Implementation of default method at concrete class"); 
     } 
     
     public static void main(String[] args) {  
-    	MyInterfaceA obj = new TestDandSMethodinInterface();
+    	MyInterfaceB obj = new TestDandSMethodinInterface();
     	
     	//calling the default method of interface
         obj.newMethod();     

@@ -21,7 +21,7 @@ public class ClockAnimation extends Application {
 
         // Create an animation for a running clock
         Timeline animation = new Timeline(
-                new KeyFrame(Duration.millis(1000), eventHandler));
+                new KeyFrame(Duration.millis(100), eventHandler));
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play(); // Start animation
 

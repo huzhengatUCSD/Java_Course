@@ -5,7 +5,7 @@ import java.net.*;
 
 public class ReadFileFromURL {
   public static void main(String[] args) {
-    System.out.print("Enter a URL: ");  //https://www.bupt.edu.cn/index.html
+    System.out.print("Enter a URL: ");  //https://www.bupt.edu.cn
     String URLString = new Scanner(System.in).next();
        
     try {

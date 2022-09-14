@@ -15,8 +15,8 @@ public class ComparableRectangle extends Rectangle
       return -1;
     else
       return 0;*/ 
-    System.out.println("升序变降序的开关");
-    return (-1)*Double.compare(getArea(),o.getArea());
+    //System.out.println("升序变降序的开关");
+    return Double.compare(getArea(),o.getArea());
   }
   
   @Override // Implement the toString method in GeometricObject

@@ -16,6 +16,7 @@ public class TestArrayListNew {
     cityList.add("Toronto");
     cityList.add("Hong Kong");
     cityList.add("Singapore");
+    cityList.add(new Integer(1));
 
     System.out.println("List size? " + cityList.size());
     System.out.println("Is Toronto in the list? " +
@@ -34,7 +35,7 @@ public class TestArrayListNew {
     // Remove a city at index 1
     cityList.remove(1);
 
-    // Display London Beijing Paris Hong Kong Singapore
+    // Display London, Beijing, Paris, HongKong, Singapore
     for (int i = 0; i < cityList.size(); i++)
       System.out.print(cityList.get(i) + " ");
     System.out.println();
@@ -45,9 +46,9 @@ public class TestArrayListNew {
     // Add a circle and a cylinder
     list.add(new Circle(2));
     list.add(new Circle(3));
-
+    list.add("");
     // Display the area of the first circle in the list
     System.out.println("The area of the circle? " +
-      ((Circle)list.get(0)).getArea());
+      (list.get(0)).getArea());
   }
 }

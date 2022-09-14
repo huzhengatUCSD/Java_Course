@@ -15,6 +15,10 @@ public class EqualsTest
       Employee alice2 = alice1;
       Employee alice3 = new Employee("Alice Adams", 75000, 1987, 12, 15);
       Employee bob = new Employee("Bob Brandson", 50000, 1989, 10, 1);
+      Employee bob1 =new Employee(null, 50000, 1989, 10, 1);
+      Employee bob2 =new Employee(null, 50000, 1989, 10, 1);
+      
+      System.out.println(bob1.equals(bob2));
 
       System.out.println("alice1 == alice2: " + (alice1 == alice2));
 

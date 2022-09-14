@@ -24,7 +24,7 @@ public class TestMap {
 
     // Create a LinkedHashMap
     Map<String, Integer> linkedHashMap =
-      new LinkedHashMap<String, Integer>(16, 0.75f, true);
+      new LinkedHashMap<String, Integer>(16, 0.75f, false);
     linkedHashMap.put("Smith", 30);
     linkedHashMap.put("Anderson", 31);
     linkedHashMap.put("Lewis", 29);

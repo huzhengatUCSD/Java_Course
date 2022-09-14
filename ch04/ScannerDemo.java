@@ -13,7 +13,18 @@ public class ScannerDemo {
         if (scan.hasNext()) {
             String str= scan.next();
             System.out.println("输入的数据为：" + str);
+            System.out.println("字符串长度为：" + str.length());
         }
+        
+        System.out.println("nextLine方式接收：");
+        // 判断是否还有输入
+        if (scan.hasNext()) {
+            String str= scan.nextLine();
+            System.out.println("输入的数据为：" + str);
+            System.out.println("字符串长度为：" + str.length());
+            System.out.println(str.charAt(str.length()-1));
+        }
+        
         scan.close();
     }
 }

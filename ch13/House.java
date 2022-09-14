@@ -28,7 +28,7 @@ public class House implements Cloneable, Comparable<House> {
   public Object clone() {
     try {
         House houseClone=(House)super.clone();
-        //houseClone.whenBuilt=(java.util.Date)(whenBuilt.clone());  //transfer from shallow copy to deep copy
+        houseClone.whenBuilt=(java.util.Date)(whenBuilt.clone());  //transfer from shallow copy to deep copy
         return houseClone;
     }
     catch (CloneNotSupportedException ex) {

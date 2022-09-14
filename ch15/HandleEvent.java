@@ -17,18 +17,18 @@ public class HandleEvent extends Application {
     pane.setAlignment(Pos.CENTER);
     Button btOK = new Button("OK");
     Button btCancel = new Button("Cancel");
-    //OKHandlerClass handler1 = new OKHandlerClass();
-    btOK.setOnAction(e -> okHandle());
+    OKHandlerClass handler1 = new OKHandlerClass();
+    btOK.setOnAction(handler1);//e -> okHandle());
     //CancelHandlerClass handler2 = new CancelHandlerClass();
     //btCancel.setOnAction(handler2);
-    //btCancel.setOnAction(e -> cancelHandle());
+    btCancel.setOnAction(e -> cancelHandle());
     //btCancel.setOnAction(new CancelHandlerClass());
-    btCancel.setOnAction(new EventHandler<ActionEvent>(){
+    /*btCancel.setOnAction(new EventHandler<ActionEvent>(){
     	  @Override
     	  public void handle(ActionEvent e) {
              System.out.println("Cancel button clicked"); 
           }
-    });
+    });*/
     pane.getChildren().addAll(btOK, btCancel);
     
     // Create a scene and place it in the stage
@@ -45,6 +45,7 @@ public class HandleEvent extends Application {
   private void cancelHandle() {
 	  System.out.println("Cancel button clicked");
   }
+  
   /**
    * The main method is only needed for the IDE with limited
    * JavaFX support. Not needed for running from the command line.

@@ -27,7 +27,7 @@ public class MainCatcherNew{
       System.out.println("main");
     }catch(SpecialException e){
       System.out.println("Wrong");
-//	  System.exit(0);
+      //System.exit(0);
 	  throw e;
     }finally{
        System.out.println("Finally");

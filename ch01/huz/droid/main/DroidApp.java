@@ -1,6 +1,7 @@
 package ch01.huz.droid.main;
+
 import ch01.huz.droid.adroid.Adroid;
-import ch01.huz.droid.adroid.smartdroid.SmartDroid;
+import ch01.huz.droid.adroid.smartdroid.*;
 
 /**
  * Droid main program

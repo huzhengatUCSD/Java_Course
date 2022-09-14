@@ -55,5 +55,5 @@ public abstract class GeometricObject {
   /** Abstract method getPerimeter */
   public abstract double getPerimeter();
   
-  public abstract void display(); 
+  public abstract void display();  
 }

@@ -12,18 +12,11 @@ public class TaskThreadDemo {
     Thread thread2 = new Thread(printB);
     Thread thread3 = new Thread(print100);
     
-    System.out.println(thread1.getPriority());
-    System.out.println(thread2.getPriority());
-    System.out.println(thread3.getPriority());
-
-    thread3.setPriority(Thread.MAX_PRIORITY);
     // Start threads
     thread3.start();
     thread2.start();
     thread1.start();
-    printB.run();
-    
-    
+    //printB.run();
   }
 }
 
@@ -65,7 +58,7 @@ class PrintNum implements Runnable {
     {
         for (int i = 1; i <= lastNum; i++) {
             System.out.print(" " + i);
-//            Thread.yield();
+            Thread.yield();
             if (i >=10) Thread.sleep(20);
         }
 

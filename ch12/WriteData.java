@@ -3,7 +3,7 @@ import java.io.*;
 
 public class WriteData {
   public static void main(String[] args) throws Exception {
-    File file = new File("scores.txt");
+    File file = new File("scores.txt"); //scores.txt
     if (file.exists()) {
       System.out.println("File already exists");
       System.exit(0);

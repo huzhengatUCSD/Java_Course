@@ -41,7 +41,7 @@ public class ControlCircle extends Application {
         primaryStage.setScene(scene); // Place the scene in the stage
         primaryStage.show(); // Display the stage
     }
-
+     //inner class
     class EnlargeHandler implements EventHandler<ActionEvent> {
         @Override // Override the handle method
         public void handle(ActionEvent e) {

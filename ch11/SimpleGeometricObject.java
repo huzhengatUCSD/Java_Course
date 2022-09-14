@@ -2,7 +2,7 @@ package ch11;
 
 public class SimpleGeometricObject {
   private String color = "white";
-  private boolean filled;
+  private boolean filled=false;
   private java.util.Date dateCreated;
   
   /** Construct a default geometric object */
@@ -46,11 +46,16 @@ public class SimpleGeometricObject {
   
   /** Return a string representation of this object */
   public String toString() {
-    return "created on " + dateCreated + "\ncolor: " + color + 
+    return super.toString()+"\ncreated on " + dateCreated + "\ncolor: " + color + 
       " and filled: " + filled;
   }
   
   public void display(){
-	  
+    printThis();	  
   }
+  
+  private void printThis() {
+	  System.out.println(this);
+  }
+  
 }

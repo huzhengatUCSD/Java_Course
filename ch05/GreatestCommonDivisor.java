@@ -15,7 +15,7 @@ public class GreatestCommonDivisor {
     int n2 = input.nextInt();
 
     int gcd = (n1<n2) ? n1 : n2;
-    for (; gcd >= 1; gcd--) {
+    for ( ; gcd >= 1; gcd--) {
         if ((n1 % gcd == 0) && (n2 % gcd == 0)) {
           break;
         }

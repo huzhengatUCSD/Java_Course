@@ -41,7 +41,7 @@ public class AccountWithSyncUsingLock {
     }
 
     public void deposit(int amount) {
-      lock.lock(); // Acquire the lock
+      //lock.lock(); // Acquire the lock
 
       try {
         int newBalance = balance + amount;
@@ -55,7 +55,7 @@ public class AccountWithSyncUsingLock {
       catch (InterruptedException ex) {
       }
       finally {
-        lock.unlock(); // Release the lock
+        //lock.unlock(); // Release the lock
       }
     }
   }

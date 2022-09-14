@@ -13,16 +13,18 @@ public class ExLoss {
 		} catch (SpecialException e) {
 			throw new Exception("Wrong");
 		} finally {
-			return 100;
+			//return 100;
+			throw new Exception("finallyException");
 		}
 	}
 
 	public static void main(String args[]) {
 		try {
 			System.out.println(new ExLoss().methodB(1)); // 打印100
-							System.out.println("No Exception");
-						} catch (Exception e) {
-							System.out.println(e.getMessage());
-		}
+		    System.out.println("No Exception");
+			}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		    }
 	}
 }

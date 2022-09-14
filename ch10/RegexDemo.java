@@ -24,8 +24,16 @@ public class RegexDemo {
          * 4，获取。
          *      
          */
+    	System.out.println("checkQQ");
        	checkQQ();
-        functionDemo_2();
+       	System.out.println("\r\nfunctionDemo1");
+       	functionDemo_1();
+       	System.out.println("\r\nfunctionDemo2");
+       	functionDemo_2();
+       	System.out.println("\r\nfunctionDemo3");
+        functionDemo_3();
+        System.out.println("\r\nfunctionDemo4");
+        functionDemo_4();
         
     }
     
@@ -42,7 +50,7 @@ public class RegexDemo {
 		boolean b = qq.matches(regex);
 		System.out.println(qq + ":" + b);
 
-		String str = "aoooooooob";
+		String str = "aoooooob";
 		String reg = "ao{4,6}b";
 		b = str.matches(reg);
 		System.out.println(str + ":" + b);
@@ -117,7 +125,7 @@ public class RegexDemo {
          
         String tel = "15800001111";//158****1111;
          
-        tel = tel.replaceAll("(\\d{3})\\d{4}(\\d{4})", "$1****$2");
+        tel = tel.replaceAll("(\\d{3})\\d{4}(\\d{4})", "$2****$2");
          
         System.out.println(tel);
          

@@ -6,7 +6,7 @@ import java.util.*;
 public class TestToken {
 	public static void main(String args[]) {
 		
-		String[] tokens = "Java#HTML#Perl".split("#", 0);
+		String[] tokens = "Java#HTML#Perl".split("#",0);
 		for (int i = 0; i < tokens.length; i++) 
 			  System.out.println(tokens[i] + " ");
 
@@ -18,7 +18,7 @@ public class TestToken {
 			//打印当前分隔符与下一个分隔符之间的内容
 			System.out.println(st.nextToken());
 		}
-		StringTokenizer st1 = new StringTokenizer("we ,are ; student", ",; ");
+		StringTokenizer st1 = new StringTokenizer("we ,are ; student", ",; ",true);
 		while (st1.hasMoreTokens()) {
 			//打印当前分隔符与下一个分隔符之间的内容
 			System.out.println(st1.nextToken());

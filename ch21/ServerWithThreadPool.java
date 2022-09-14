@@ -31,6 +31,7 @@ public class ServerWithThreadPool {
 				socket = serverSocket.accept(); // 可能会抛出SocketTimeoutException和SocketException
 				socket.setSoTimeout(60000); // 把等待客户发送数据的超时时间设为60秒
 				executorService.execute(new Handler(socket)); // 可能会抛出RejectedExecutionException
+
 			} catch (SocketTimeoutException e) {
 				// 不必处理等待客户连接时出现的超时异常
 			} catch (RejectedExecutionException e) {

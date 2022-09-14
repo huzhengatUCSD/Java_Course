@@ -15,8 +15,8 @@ public class CircleFromSimpleGeometricObject
       String color, boolean filled) {
 	super(color,filled);
     this.radius = radius;
-    //setColor(color); // using this.color= color is illegal 
-    //setFilled(filled); //using this.filled = filled is illegal 
+    setColor(color); // using this.color= color is illegal 
+    setFilled(filled); //using this.filled = filled is illegal 
   }
 
   /** Return radius */
@@ -55,6 +55,7 @@ public class CircleFromSimpleGeometricObject
   public String toString(){
 	  return super.toString() + "\nradius is "+ radius+"\nArea is "+getArea();
   }
+  
   
   @Override
   public void display(){

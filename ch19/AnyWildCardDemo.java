@@ -14,7 +14,7 @@ public class AnyWildCardDemo {
   }
 
   /** Print objects and empties the stack */
-  public static void print(GenericStack<?> stack) {
+  public static void print(GenericStack<? extends Number> stack) {
     while (!stack.isEmpty()) {
       System.out.print(stack.pop() + " ");
     }

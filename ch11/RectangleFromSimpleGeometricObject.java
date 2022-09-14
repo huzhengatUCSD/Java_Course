@@ -61,6 +61,6 @@ public class RectangleFromSimpleGeometricObject
    
   @Override 
   public String toString(){
-    return "test for rectangle hello world";
+    return super.toString() +"\n！！！！！test for rectangle hello world";
   }
 }

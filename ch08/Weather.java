@@ -34,5 +34,6 @@ public class Weather {
       System.out.println("Day  " + i + "'s average humidity is " 
         + dailyHumidityTotal / NUMBER_OF_HOURS);
     }       
+    input.close();
   }       
 }

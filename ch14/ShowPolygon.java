@@ -27,7 +27,7 @@ public class ShowPolygon extends Application {
     for (int i = 0; i < 6; i++) {
       list.add(centerX + radius * Math.cos(2 * i * Math.PI / 6)); 
       list.add(centerY - radius * Math.sin(2 * i * Math.PI / 6));
-    }     
+    }  
     
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane, WIDTH, HEIGHT);

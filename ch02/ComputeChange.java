@@ -13,7 +13,7 @@ public class ComputeChange {
 				  "Enter an amount in double, for example 11.56: ");
 		  double amount = input.nextDouble();
 
-		  int remainingAmount = (int)(amount * 100);
+		  int remainingAmount = Math.round((float)(amount * 100)); //(int)(amout * 100);
 
 		  // Find the number of one dollars
 		  int numberOfOneDollars = remainingAmount / 100;

@@ -4,8 +4,8 @@ public class TestCircleWithCustomException {
   public static void main(String[] args) {
     try {
       new CircleWithCustomException(5);
-      new CircleWithCustomException(-5);
-      new CircleWithCustomException(0);
+      new CircleWithCustomException(4);
+      new CircleWithCustomException(-1);
     }
     catch (InvalidRadiusException ex) {
       System.out.println(ex);
@@ -45,7 +45,7 @@ class CircleWithCustomException {
       throws InvalidRadiusException {
     if (newRadius >= 0)
       radius =  newRadius;
-    else
+    else 
       throw new InvalidRadiusException(newRadius);
   }
 

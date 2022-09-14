@@ -1,6 +1,6 @@
 package ch13;
 
-public class Circle extends GeometricObject {
+public  class Circle extends GeometricObject {
   private double radius;
 
   public Circle() {
@@ -35,10 +35,10 @@ public class Circle extends GeometricObject {
     return 2 * radius * Math.PI;
   }
 
-  @Override
-  public void display(){
-	  // to do something
-  }
+  //@Override
+  public void display() {
+	  System.out.println("this is a circle");
+  };
   
  
 }

@@ -74,7 +74,7 @@ public class ReflectionTest
     */
    public static void printMethods(Class cl)
    {
-      Method[] methods = cl.getDeclaredMethods();
+      Method[] methods = cl.getMethods(); //cl.getDeclaredMethods();
 //.getDeclaredMethods();
       for (Method m : methods)
       {
@@ -104,8 +104,8 @@ public class ReflectionTest
     */
    public static void printFields(Class cl)
    {
-      Field[] fields = cl.getDeclaredFields();
-      //Field[] fields=cl.getFields();
+      //Field[] fields = cl.getDeclaredFields();
+      Field[] fields=cl.getFields();
       
 
       for (Field f : fields)

@@ -19,7 +19,7 @@ public class TestRandomAccessFile {
   
       // Retrieve the first number
       inout.seek(0); // Move the file pointer to the beginning
-      System.out.println("The first number is " + inout.readInt());
+      System.out.println("The first number is " + inout.readLong());
   
       // Retrieve the second number
       inout.seek(1 * 4); // Move the file pointer to the second number
@@ -27,7 +27,7 @@ public class TestRandomAccessFile {
   
       // Retrieve the tenth number
       inout.seek(9 * 4); // Move the file pointer to the tenth number
-      System.out.println("The tenth number is " + inout.readInt());
+      System.out.println("The tenth number is " + inout.readLong());
   
       // Modify the eleventh number
       inout.writeInt(555);
@@ -41,7 +41,7 @@ public class TestRandomAccessFile {
   
       // Retrieve the new eleventh number
       inout.seek(10 * 4); // Move the file pointer to the eleventh number
-      System.out.println("The eleventh number is " + inout.readInt());
+      System.out.println("The eleventh number is " + inout.readLong());
     }
   }
 }

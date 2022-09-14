@@ -14,7 +14,7 @@ public class TestHashSet {
     set.add("3 New York");
     set.add("4 San Francisco");
     set.add("5 Beijing");
-    set.add("6 New York");
+    set.add("3 New York");
 
     System.out.println(set);
 

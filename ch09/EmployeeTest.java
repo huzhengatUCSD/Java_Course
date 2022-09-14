@@ -1,7 +1,6 @@
 package ch09;
 
-import java.util.*;
-import ch10.*;
+import ch10.Employee;
 
 /**
  * This program tests the Employee class.

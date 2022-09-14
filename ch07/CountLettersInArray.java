@@ -62,9 +62,9 @@ public class CountLettersInArray {
   public static void displayCounts(int[] counts) {
     for (int i = 0; i < counts.length; i++) {
       if ((i + 1) % 10 == 0)
-        System.out.println("<"+counts[i] + ":" + (char)(i + 'a')+"> ");
+        System.out.println("<"+(char)(i + 'a') + ":" + counts[i] +"> ");
       else
-        System.out.print("<"+counts[i] + ":" + (char)(i + 'a') + "> ");
+        System.out.print("<"+(char)(i + 'a')+ ":" + counts[i]  + "> ");
     }
   }
 }

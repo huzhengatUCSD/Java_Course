@@ -21,10 +21,11 @@ public class ShowFlowPane extends Application {
     pane.getChildren().addAll(new Label("First Name:"), 
       new TextField(), new Label("MI:"));
     TextField tfMi = new TextField();
-    tfMi.setPrefColumnCount(1);
+    tfMi.setPrefColumnCount(10);
     pane.getChildren().addAll(tfMi, new Label("Last Name:"),
       new TextField());
-    
+    pane.getChildren().addAll(new Label("Last Namedd:"),
+    	      new TextField());
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane, 200, 250);
     primaryStage.setTitle("ShowFlowPane"); // Set the stage title

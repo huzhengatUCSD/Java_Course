@@ -4,6 +4,7 @@ public class WithReturn{
 	public int methodA(int money)throws Exception{
 		if(--money<=0) throw new Exception("Out of money");
 		return money;}
+	
 	public int methodB(int money){
 		int a=-100;
 		try{
@@ -12,7 +13,7 @@ public class WithReturn{
 			return result;
 		}catch(Exception e){
 			System.out.println(e.getMessage());
-			return a;  
+			return a;   
 		}finally{
 			a=100;
 			System.out.println("Finally");

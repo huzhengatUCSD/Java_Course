@@ -7,6 +7,7 @@ public class QuotientWithMethod {
     if (number2 == 0) {
       System.out.println("Divisor cannot be zero");
       System.exit(1);
+      
     }
 
     return number1 / number2;

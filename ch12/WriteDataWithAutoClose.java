@@ -16,7 +16,7 @@ public class WriteDataWithAutoClose {
       // Write formatted output to the file
       output.print("John T Smith ");
       //output.print(30);
-      output.println("90");
+      output.println(90);
       output.print("Eric K Jones ");
       output.println(85);
     }

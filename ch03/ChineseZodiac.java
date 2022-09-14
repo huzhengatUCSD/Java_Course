@@ -12,7 +12,7 @@ public class ChineseZodiac {
     final int MONKEY=0;
     
     switch (year % 12) {
-      case MONKEY: System.out.println("monkey"); break;
+      case MONKEY: System.out.println("monkey");
       case 1: System.out.println("rooster"); break;
       case 2: System.out.println("dog"); break;
       case 3: System.out.println("pig"); break;

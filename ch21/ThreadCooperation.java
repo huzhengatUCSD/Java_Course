@@ -8,12 +8,17 @@ public class ThreadCooperation {
 
   public static void main(String[] args) {
     // Create a thread pool with two threads
-    ExecutorService executor = Executors.newFixedThreadPool(2);
+    ExecutorService executor = Executors.newFixedThreadPool(5);
     executor.execute(new DepositTask());
+    executor.execute(new DepositTask());
+/*    executor.execute(new DepositTask());
+    executor.execute(new DepositTask());*/
+    executor.execute(new WithdrawTask());
+    executor.execute(new WithdrawTask());
     executor.execute(new WithdrawTask());
     executor.shutdown();
 
-    System.out.println("Thread 1\t\tThread 2\t\tBalance");
+    //System.out.println("Thread 1\t\tThread 2\t\tBalance");
   }
 
   public static class DepositTask implements Runnable {
@@ -47,6 +52,7 @@ public class ThreadCooperation {
 
     // Create a condition
     private static Condition newDeposit = lock.newCondition();
+    
 
     private int balance = 0;
 
@@ -65,6 +71,7 @@ public class ThreadCooperation {
         balance -= amount;
         System.out.println("\t\t\tWithdraw " + amount +
           "\t\t" + getBalance());
+        
       }
       catch (InterruptedException ex) {
         ex.printStackTrace();
@@ -83,8 +90,7 @@ public class ThreadCooperation {
 
         // Signal thread waiting on the condition
         newDeposit.signalAll();
-      }
-      finally {
+      }finally {
         lock.unlock(); // Release the lock
       }
     }

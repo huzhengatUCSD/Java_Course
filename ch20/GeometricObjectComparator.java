@@ -10,10 +10,10 @@ public class GeometricObjectComparator
     double area2 = o2.getArea();
 
     if (area1 < area2)
-      return -1;
+      return 1;
     else if (area1 == area2)
       return 0;
     else
-      return 1;
+      return -1;
   }
 }

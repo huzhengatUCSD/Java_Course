@@ -1,8 +1,13 @@
 package ch15;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
@@ -23,6 +28,18 @@ public class DisplayResizableClock extends Application {
         pane.setBottom(lblCurrentTime);
         BorderPane.setAlignment(lblCurrentTime, Pos.TOP_CENTER);
 
+        // Create a handler for changing text
+        EventHandler<ActionEvent> eventHandler = e -> {
+        	clock.setCurrentTime();
+        	lblCurrentTime.setText(String.format("%tr%n",new java.util.Date()));
+        };
+
+        // Create an animation for alternating text
+        Timeline animation = new Timeline(
+                new KeyFrame(Duration.millis(1000), eventHandler));
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play(); // Start animation
+        
         // Create a scene and place the pane in the stage
         Scene scene = new Scene(pane, 250, 250);
         primaryStage.setTitle("DisplayClock"); // Set the stage title

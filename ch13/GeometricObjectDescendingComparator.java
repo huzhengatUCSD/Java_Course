@@ -6,8 +6,8 @@ import java.util.Comparator;
  * 面积降序排序器
  */
 public class GeometricObjectDescendingComparator
-    implements Comparator<Rectangle>, java.io.Serializable {
-  public int compare(Rectangle o1, Rectangle o2) {
+    implements Comparator<GeometricObject>, java.io.Serializable {
+  public int compare(GeometricObject o1, GeometricObject o2) {
     double area1 = o1.getArea();
     double area2 = o2.getArea();
 

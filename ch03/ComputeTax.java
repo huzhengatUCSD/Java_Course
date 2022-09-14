@@ -1,5 +1,6 @@
 package ch03;
 
+
 import java.util.Scanner; 
 
 public class ComputeTax {
@@ -12,7 +13,7 @@ public class ComputeTax {
       "qualifying widow(er), 2-married separately, 3-head of " +
       "household) Enter the filing status: ");
     int status = input.nextInt();
-
+   
     // Prompt the user to enter taxable income
     System.out.print("Enter the taxable income: ");
     double income = input.nextDouble();

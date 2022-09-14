@@ -3,23 +3,23 @@ package ch19;
 //revision based on ch11.MyStack;
 
 import java.util.ArrayList;
-public class GenericStack<E> {
-  private ArrayList<E> list = new ArrayList<E>();
+public class GenericStack<T> {
+  private ArrayList<T> list = new ArrayList<T>();
    
   public int getSize() {
     return list.size();
   }
 
-  public E peek() {
+  public T peek() {
     return list.get(getSize() - 1);
   }
 
-  public void push(E o) {
+  public void push(T o) {
     list.add(o);
   }
 
-  public E pop() {
-    E o = list.get(getSize() - 1);
+  public T pop() {
+    T o = list.get(getSize() - 1);
     list.remove(getSize() - 1);
     return o;
   }

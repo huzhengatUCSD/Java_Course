@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SubtractionQuizLoop {
   public static void main(String[] args) {
-    final int NUMBER_OF_QUESTIONS = 15; // Number of questions
+    final int NUMBER_OF_QUESTIONS = 5; // Number of questions
     int correctCount = 0; // Count the number of correct answers
     int count = 0; // Count the number of questions
     int totalcount = 0; // Total count of the all rounds of questions 

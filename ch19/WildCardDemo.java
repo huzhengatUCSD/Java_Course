@@ -19,11 +19,12 @@ public class WildCardDemo {
     	 ArrayList<? extends A> listB = new ArrayList<B>();
     	 ArrayList<? extends A> listC = new ArrayList<C>();
     	 ArrayList<? extends A> listD = new ArrayList<D>();
-//ArrayList<? extends A> listE = new ArrayList<E>();  //
+    	 ArrayList<A> listE = new ArrayList<B>();
+    	 ArrayList<? extends A> listF = new ArrayList<E>();  //
 
     	 ArrayList<? super B> listA1 = new ArrayList<A>();
     	 ArrayList<? super B> listA2 = new ArrayList<B>();
     	 ArrayList<? super B> listF = new ArrayList<F>();
-    	 //ArrayList<? super B> listG = new ArrayList<G>();  //
+    	// ArrayList<? super B> listG = new ArrayList<G>();  //
 	     }
  }

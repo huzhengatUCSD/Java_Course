@@ -2,7 +2,7 @@ package ch07;
 
 public class Calculator {
   /** Main method */
-  public static void main(String[] args) {
+  public static void main(String... args) {
     // Check number of strings passed
     if (args.length != 3) {
       System.out.println(
