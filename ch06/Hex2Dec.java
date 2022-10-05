@@ -20,16 +20,22 @@ public class Hex2Dec {
     int decimalValue = 0;
     for (int i = 0; i < hex.length(); i++) {
       char hexChar = hex.charAt(i);
-      decimalValue = decimalValue * 16 + hexCharToDecimal(hexChar);
+      int charDecimal=hexCharToDecimal(hexChar);
+      if (charDecimal==-1){
+        System.out.println("invalid Hex number digit input!");
+        System.exit(0);
+      }
+      decimalValue = decimalValue * 16 + charDecimal;
     }
     
     return decimalValue;
   }
 
   public static int hexCharToDecimal(char ch) {
-    if (ch >= 'A' && ch <= 'F')
+    if (ch >= 'A' && ch <= 'F') {
       return 10 + ch - 'A';
-    else // ch is '0', '1', ..., or '9'
+    } else if (Character.isDigit(ch)) {// ch is '0', '1', ..., or '9'
       return ch - '0';
+    } else return -1;
   }
 }
