@@ -15,7 +15,7 @@ public class GreatestCommonDivisorMethod {
     int n2 = input.nextInt();
 
     System.out.println("The greatest common divisor for " + n1 +
-      " and " + n2 + " is " + gcd(n1, n2));
+      " and " + n2 + " is " + gcd1(n1, n2));
   
   }
 
@@ -33,7 +33,7 @@ public class GreatestCommonDivisorMethod {
     return gcd; // Return gcd
   }
   
-  /*public static int gcd1(int n1, int n2) {
+  public static int gcd1(int n1, int n2) {
 	  int gcd1 = 1;
 	    
 	    if (n1 % n2 == 0) return n2;
@@ -46,5 +46,5 @@ public class GreatestCommonDivisorMethod {
 	    }
 	    
 	    return gcd1;
-  }*/
+  }
 }
