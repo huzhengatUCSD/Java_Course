@@ -10,7 +10,7 @@ public class FahrenheitToCelsius {
     double fahrenheit = input.nextDouble(); 
 
     // Convert Fahrenheit to Celsius
-    double celsius = (5.0 / 9) * (fahrenheit - 32);
+    double celsius = ( 5.0 / 9) * (fahrenheit - 32);//be care for the integer division
     System.out.println("Fahrenheit " + fahrenheit + " is " + 
       celsius + " in Celsius");  
     input.close();

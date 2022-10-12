@@ -8,7 +8,7 @@ public class ShowCurrentTime {
     // Obtain the total milliseconds since midnight, Jan 1, 1970
     long totalMilliseconds = System.currentTimeMillis(); 
     // Use Date instance to process the time
-    Date date = new Date(totalMilliseconds);
+    Date date = new Date(totalMilliseconds);//
     
     
     // Obtain the total seconds since midnight, Jan 1, 1970
@@ -28,7 +28,7 @@ public class ShowCurrentTime {
 
     // Compute the current hour
     long currentHour = totalHours % 24;
-    System.out.println("--------------Display results---------------------");
+    System.out.println("--------------Display results--------------------");
     //Display results with old way
     System.out.println("Current time is " + currentHour + ":"
       + currentMinute + ":" + currentSecond + " GMT");
