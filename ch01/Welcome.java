@@ -4,7 +4,7 @@ package ch01;
 
 public class Welcome { 
 	public void hello() {
-		System.out.println("Hello, Welcome to Java World! "); 
+		System.out.println("Hello, Welcome! "); 
 	}
   public static void main(String[] args) { 
     // Display message Welcome to Java! on the console
